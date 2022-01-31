@@ -24,7 +24,7 @@ and [`npm publish`](https://docs.npmjs.com/cli/v8/commands/npm-publish).
 
 [ESLint](https://github.com/eslint/eslint) ∙
 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint) ∙
-[eslint-plugin-svelte3](https://github.com/sveltejs/eslint-plugin-svelte3)
+[eslint-plugin-svelte3](https://github.com/sveltejs/eslint-plugin-svelte3) ∙
 [Prettier](https://github.com/prettier/prettier)
 & [more](package.json)
 
