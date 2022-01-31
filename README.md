@@ -2,6 +2,12 @@
 
 > an ESLint config for the [@feltcoop](https://github.com/feltcoop) org
 
+This ESLint config is designed to complement TypeScript and Prettier,
+so all redundant rules are disabled.
+Additionally, to distinguish linting problems from type errors,
+all of the rules are set to warn, not error,
+and users are expected run `eslint --max-warnings 0` to treat them as errors when desired.
+
 ## develop
 
 See [index.cjs](index.cjs) and the [ESLint docs](https://eslint.org/).

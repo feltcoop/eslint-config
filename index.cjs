@@ -11,6 +11,6 @@ module.exports = {
 	},
 	plugins: ['@typescript-eslint', 'svelte3'],
 	rules: {
-		'no-var': 2,
+		'no-var': 1,
 	},
 };

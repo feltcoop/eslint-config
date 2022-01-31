@@ -3,7 +3,7 @@
   "description": "an ESLint config for the @feltcoop org",
   "version": "0.0.1",
   "license": "Unlicense",
-  "homepage": "https://feltcoop.github.io/eslint-config",
+  "homepage": "https://github.com/feltcoop/eslint-config",
   "repository": "github:feltcoop/eslint-config",
   "author": {
     "name": "Felt.coop",
