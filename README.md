@@ -8,6 +8,8 @@ See [index.cjs](index.cjs) and the [ESLint docs](https://eslint.org/).
 
 ## publish
 
+First update the [changelog](changelog.md) with rule changes or other things, then:
+
 ```bash
 npm version patch|minor|major|etc
 npm publish
