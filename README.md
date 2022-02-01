@@ -4,7 +4,7 @@
 
 This ESLint config is designed to complement TypeScript and Prettier,
 so all redundant rules are disabled.
-Additionally, to distinguish linting problems from type errors,
+Additionally, to distinguish linting problems from type errors while editing,
 all of the rules are set to warn, not error,
 and users are expected run `eslint --max-warnings 0` to treat them as errors when desired.
 
