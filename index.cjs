@@ -4,7 +4,6 @@ module.exports = {
 		node: true,
 		es2021: true,
 	},
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 'latest',
@@ -12,6 +11,9 @@ module.exports = {
 	},
 	plugins: ['@typescript-eslint', 'svelte3'],
 	overrides: [
+		{
+			files: ['*.ts'],
+		},
 		{
 			files: ['*.svelte'],
 			processor: 'svelte3/svelte3',
