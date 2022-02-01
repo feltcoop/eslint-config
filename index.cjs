@@ -203,18 +203,15 @@ module.exports = {
 		//
 		// @typescript-eslint/eslint-plugin all rules
 		//
-		// '@typescript-eslint/adjacent-overload-signatures': 1,
-		// '@typescript-eslint/array-type': 1,
-		// '@typescript-eslint/await-thenable': 1,
-		// '@typescript-eslint/ban-ts-comment': 1,
-		// '@typescript-eslint/ban-tslint-comment': 1,
-		// '@typescript-eslint/ban-types': 1,
-		// '@typescript-eslint/class-literal-property-style': 1,
-		// '@typescript-eslint/consistent-indexed-object-style': 1,
-		// '@typescript-eslint/consistent-type-assertions': 1,
-		// '@typescript-eslint/consistent-type-definitions': 1,
-		// '@typescript-eslint/consistent-type-imports': 1,
-		// '@typescript-eslint/consistent-type-exports': 1,
+		'@typescript-eslint/adjacent-overload-signatures': 1,
+		'@typescript-eslint/array-type': 1,
+		'@typescript-eslint/await-thenable': 1,
+		'@typescript-eslint/consistent-type-assertions': 1,
+		'@typescript-eslint/consistent-type-imports': 1, // TODO prefer inline, see https://github.com/typescript-eslint/typescript-eslint/issues/4338
+		'@typescript-eslint/consistent-type-exports': [
+			1,
+			{fixMixedExportsWithInlineTypeSpecifier: true},
+		],
 		'@typescript-eslint/dot-notation': 1,
 		// '@typescript-eslint/explicit-function-return-type': 1,
 		// '@typescript-eslint/explicit-member-accessibility': 1,
