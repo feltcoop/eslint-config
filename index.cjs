@@ -184,7 +184,6 @@ module.exports = {
 		// prefer-template	require template literals instead of string concatenation
 		// quote-props	require quotes around object literal property names
 		// radix	enforce the consistent use of the radix argument when using `parseInt()`
-		'require-await': 1, // preferring over the TypeScript version because it seems more sensible
 		// require-unicode-regexp	enforce the use of `u` flag on RegExp
 		// require-yield	require generator functions to contain `yield`
 		// sort-imports	enforce sorted import declarations within modules
@@ -214,12 +213,10 @@ module.exports = {
 			{fixMixedExportsWithInlineTypeSpecifier: true},
 		],
 		'@typescript-eslint/dot-notation': 1,
-		// TODO one or the other of these -- check on felt-server and Gro first
-		'@typescript-eslint/explicit-function-return-type': [1, {allowExpressions: true}],
-		// '@typescript-eslint/explicit-module-boundary-types': [
-		// 	1,
-		// 	{allowArgumentsExplicitlyTypedAsAny: true},
-		// ],
+		'@typescript-eslint/explicit-module-boundary-types': [
+			1,
+			{allowArgumentsExplicitlyTypedAsAny: true},
+		],
 		'@typescript-eslint/method-signature-style': 1,
 		'@typescript-eslint/no-array-constructor': 1,
 		'@typescript-eslint/no-base-to-string': 1,
@@ -236,16 +233,14 @@ module.exports = {
 		'@typescript-eslint/no-loss-of-precision': 1,
 		'@typescript-eslint/no-meaningless-void-operator': 1,
 		'@typescript-eslint/no-misused-new': 1,
-		'@typescript-eslint/no-misused-promises': 1,
+		'@typescript-eslint/no-misused-promises': [1, {checksVoidReturn: false}],
 		'@typescript-eslint/no-namespace': 1,
 		'@typescript-eslint/no-non-null-asserted-nullish-coalescing': 1,
 		'@typescript-eslint/no-non-null-asserted-optional-chain': 1,
 		'@typescript-eslint/no-require-imports': 1,
-		'@typescript-eslint/no-shadow': [1, {builtinGlobals: true, hoist: 'all'}],
 		'@typescript-eslint/no-this-alias': 1,
 		'@typescript-eslint/no-throw-literal': 1,
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 1,
-		'@typescript-eslint/no-unnecessary-condition': [1, {allowConstantLoopConditions: true}],
 		'@typescript-eslint/no-unnecessary-type-assertion': 1,
 		'@typescript-eslint/no-unnecessary-type-constraint': 1,
 		'@typescript-eslint/no-unused-expressions': [
@@ -258,7 +253,6 @@ module.exports = {
 		'@typescript-eslint/prefer-for-of': 1,
 		'@typescript-eslint/prefer-includes': 1,
 		'@typescript-eslint/prefer-namespace-keyword': 1,
-		'@typescript-eslint/prefer-nullish-coalescing': 1,
 		'@typescript-eslint/prefer-optional-chain': 1,
 		'@typescript-eslint/prefer-reduce-type-parameter': 1,
 		'@typescript-eslint/prefer-regexp-exec': 1,
@@ -266,13 +260,11 @@ module.exports = {
 		'@typescript-eslint/prefer-ts-expect-error': 1,
 		'@typescript-eslint/require-array-sort-compare': [1, {ignoreStringArrays: true}],
 		'@typescript-eslint/return-await': 1,
-		'@typescript-eslint/strict-boolean-expressions': [1, {allowAny: true}],
 		'@typescript-eslint/switch-exhaustiveness-check': 1,
 		// TODO does `prefer-import` work for the SvelteKit `globals.d.ts`?
 		'@typescript-eslint/triple-slash-reference': [
 			1,
 			{path: 'never', types: 'prefer-import', lib: 'never'},
 		],
-		'@typescript-eslint/unified-signatures': 1,
 	},
 };

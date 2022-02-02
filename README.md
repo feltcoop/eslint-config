@@ -8,6 +8,33 @@ Additionally, to distinguish linting problems from type errors while editing,
 all of the rules are set to warn, not error,
 and users are expected run `eslint --max-warnings 0` to treat them as errors when desired.
 
+## setup
+
+Add the following to your project's `package.json` or an
+[ESLint config file](https://eslint.org/docs/user-guide/configuring/configuration-files):
+
+```json
+{
+	// package.json
+	"eslintConfig": {
+		"root": true,
+		"extends": "@feltcoop",
+		"parserOptions": {
+			"project": ["./tsconfig.json"]
+		},
+		"rules": {
+			// optionally override any rules
+		}
+	}
+}
+```
+
+Install ESLint dev dependencies:
+
+```bash
+npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-svelte3
+```
+
 ## develop
 
 See [index.cjs](index.cjs) and the [ESLint docs](https://eslint.org/).
