@@ -11,7 +11,7 @@ and users are expected run `eslint --max-warnings 0` to treat them as errors whe
 There may be a better way to do this, but it was the first obvious way I found
 to get yellow squigglies in text editors instead of the overloaded red ones,
 and it feels like the computer is being more kind
-when linting problems display as yellow warnings rather than red errors in CLI output,
+when linting problems display as yellow warnings rather than red errors in stdout,
 even if they block CI either way.
 
 ## setup
