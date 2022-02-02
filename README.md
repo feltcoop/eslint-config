@@ -1,6 +1,6 @@
 # @feltcoop/eslint-config
 
-> an ESLint config for the [@feltcoop](https://github.com/feltcoop) org
+> an [ESLint](https://eslint.org/) config for the [@feltcoop](https://github.com/feltcoop) org
 
 This ESLint config is designed to complement TypeScript and Prettier,
 so all redundant rules are disabled.
@@ -16,7 +16,9 @@ even if they block CI either way.
 
 ## setup
 
-Install ESLint dev dependencies:
+Install ESLint dev dependencies with
+[TypeScript](https://github.com/typescript-eslint/typescript-eslint/)
+and [Svelte](https://github.com/sveltejs/eslint-plugin-svelte3) plugins:
 
 ```bash
 npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-svelte3
