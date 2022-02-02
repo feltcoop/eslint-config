@@ -206,8 +206,6 @@ module.exports = {
 		'@typescript-eslint/array-type': [1, {default: 'array-simple', readonly: 'array-simple'}],
 		'@typescript-eslint/await-thenable': 1,
 		'@typescript-eslint/consistent-type-assertions': 1,
-		// TODO prefer inline, see https://github.com/typescript-eslint/typescript-eslint/issues/4338
-		'@typescript-eslint/consistent-type-imports': 1,
 		'@typescript-eslint/consistent-type-exports': [
 			1,
 			{fixMixedExportsWithInlineTypeSpecifier: true},
