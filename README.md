@@ -10,12 +10,17 @@ and users are expected run `eslint --max-warnings 0` to treat them as errors whe
 
 ## setup
 
-Add the following to your project's `package.json` or an
+Install ESLint dev dependencies:
+
+```bash
+npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-svelte3
+```
+
+Then add the following to your project's `package.json` or an
 [ESLint config file](https://eslint.org/docs/user-guide/configuring/configuration-files):
 
 ```json
 {
-	// package.json
 	"eslintConfig": {
 		"root": true,
 		"extends": "@feltcoop",
@@ -23,16 +28,10 @@ Add the following to your project's `package.json` or an
 			"project": ["./tsconfig.json"]
 		},
 		"rules": {
-			// optionally override any rules
+			"some-rule-override": 0
 		}
 	}
 }
-```
-
-Install ESLint dev dependencies:
-
-```bash
-npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-svelte3
 ```
 
 ## develop
