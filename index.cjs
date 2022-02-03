@@ -25,23 +25,19 @@ module.exports = {
 		'no-constructor-return': 1,
 		'no-control-regex': 1,
 		'no-debugger': 1,
-		// no-dupe-else-if	disallow duplicate conditions in if-else-if chains
-		// no-duplicate-case	disallow duplicate case labels
-		// no-empty-character-class	disallow empty character classes in regular expressions
-		// no-empty-pattern	disallow empty destructuring patterns
-		// no-ex-assign	disallow reassigning exceptions in `catch` clauses
-		// no-fallthrough	disallow fallthrough of `case` statements
-		// no-inner-declarations	disallow variable or `function` declarations in nested blocks
-		// no-invalid-regexp	disallow invalid regular expression strings in `RegExp` constructors
-		// no-irregular-whitespace	disallow irregular whitespace
-		// no-misleading-character-class	disallow characters which are made with multiple code points in character class syntax
-		// no-promise-executor-return	disallow returning values from Promise executor functions
-		// no-prototype-builtins	disallow calling some `Object.prototype` methods directly on objects
-		// no-self-assign	disallow assignments where both sides are exactly the same
-		// no-self-compare	disallow comparisons where both sides are exactly the same
-		// no-sparse-arrays	disallow sparse arrays
-		// no-template-curly-in-string	disallow template literal placeholder syntax in regular strings
-		// no-unexpected-multiline	disallow confusing multiline expressions
+		'no-dupe-else-if': 1,
+		'no-duplicate-case': 1,
+		'no-empty-character-class': 1,
+		'no-empty-pattern': 1,
+		'no-ex-assign': 1,
+		'no-inner-declarations': 1,
+		'no-invalid-regexp': 1,
+		'no-irregular-whitespace': 1,
+		'no-misleading-character-class': 1,
+		'no-promise-executor-return': 1,
+		'no-prototype-builtins': 1,
+		'no-self-compare': 1,
+		'no-sparse-arrays': 1,
 		// no-unmodified-loop-condition	disallow unmodified loop conditions
 		// no-unreachable-loop	disallow loops with a body that allows only one iteration
 		// no-unsafe-finally	disallow control flow statements in `finally` blocks
