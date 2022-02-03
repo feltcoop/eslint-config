@@ -193,7 +193,7 @@ module.exports = {
 		},
 		{
 			// TODO this seems to not be working for Svelte files
-			files: ['*.ts', '*.svelte'],
+			files: ['*.ts'], // , '*.svelte'
 			rules: {
 				'@typescript-eslint/adjacent-overload-signatures': 1,
 				'@typescript-eslint/array-type': [1, {default: 'array-simple', readonly: 'array-simple'}],
@@ -252,10 +252,9 @@ module.exports = {
 				'@typescript-eslint/require-array-sort-compare': [1, {ignoreStringArrays: true}],
 				'@typescript-eslint/return-await': 1,
 				'@typescript-eslint/switch-exhaustiveness-check': 1,
-				// TODO does `prefer-import` work for the SvelteKit `globals.d.ts`?
 				'@typescript-eslint/triple-slash-reference': [
 					1,
-					{path: 'never', types: 'prefer-import', lib: 'never'},
+					{path: 'never', types: 'never', lib: 'never'},
 				],
 			},
 		},
