@@ -14,21 +14,17 @@ module.exports = {
 		'svelte3/typescript': true,
 	},
 	rules: {
-		//
-		//
 		// eslint possible problems
-		//
-		'array-callback-return': [1, {checkForEach: true}], //	enforce `return` statements in callbacks of array methods
-		// for-direction	enforce "for" loop update clause moving the counter in the right direction.
-		// no-async-promise-executor	disallow using an async function as a Promise executor
-		// no-await-in-loop	disallow `await` inside of loops
-		// no-class-assign	disallow reassigning class members
-		// no-compare-neg-zero	disallow comparing against -0
-		// no-cond-assign	disallow assignment operators in conditional expressions
-		// no-constant-condition	disallow constant expressions in conditions
-		// no-constructor-return	disallow returning value from constructor
-		// no-control-regex	disallow control characters in regular expressions
-		// no-debugger	disallow the use of `debugger`
+		'array-callback-return': [1, {checkForEach: true}],
+		'for-direction': 1,
+		'getter-return': 1,
+		'no-async-promise-executor': 1,
+		'no-await-in-loop': 1,
+		'no-compare-neg-zero': 1,
+		'no-constant-condition': 1,
+		'no-constructor-return': 1,
+		'no-control-regex': 1,
+		'no-debugger': 1,
 		// no-dupe-else-if	disallow duplicate conditions in if-else-if chains
 		// no-duplicate-case	disallow duplicate case labels
 		// no-empty-character-class	disallow empty character classes in regular expressions
