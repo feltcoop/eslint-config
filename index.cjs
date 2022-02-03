@@ -188,7 +188,12 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ['*.ts'],
+			files: ['*.svelte'],
+			processor: 'svelte3/svelte3',
+		},
+		{
+			// TODO this seems to not be working for Svelte files
+			files: ['*.ts', '*.svelte'],
 			rules: {
 				'@typescript-eslint/adjacent-overload-signatures': 1,
 				'@typescript-eslint/array-type': [1, {default: 'array-simple', readonly: 'array-simple'}],
@@ -253,10 +258,6 @@ module.exports = {
 					{path: 'never', types: 'prefer-import', lib: 'never'},
 				],
 			},
-		},
-		{
-			files: ['*.svelte'],
-			processor: 'svelte3/svelte3',
 		},
 	],
 };
