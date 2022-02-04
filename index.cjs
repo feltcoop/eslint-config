@@ -44,23 +44,10 @@ module.exports = {
 		'no-useless-backreference': 1,
 		'require-atomic-updates': 1, // TODO maybe delete?
 		'use-isnan': 1,
-		//
-		//
 		// eslint suggestions
-		//
-		// accessor-pairs	enforce getter and setter pairs in objects and classes
-		// arrow-body-style	require braces around arrow function bodies
-		// block-scoped-var	enforce the use of variables within the scope they are defined
-		// camelcase	enforce camelcase naming convention
-		// capitalized-comments	enforce or disallow capitalization of the first letter of a comment
-		// class-methods-use-this	enforce that class methods utilize `this`
-		// complexity	enforce a maximum cyclomatic complexity allowed in a program
-		// consistent-return	require `return` statements to either always or never specify values
-		// consistent-this	enforce consistent naming when capturing the current execution context
-		// curly	enforce consistent brace style for all control statements
-		// default-case	require `default` cases in `switch` statements
-		// default-case-last	enforce default clauses in switch statements to be last
-		// eqeqeq	require the use of `===` and `!==`
+		'consistent-this': 1,
+		'default-case-last': 1,
+		eqeqeq: [1, 'always', {null: 'ignore'}],
 		// func-name-matching	require function names to match the name of the variable or property to which they are assigned
 		// func-names	require or disallow named `function` expressions
 		// func-style	enforce the consistent use of either `function` declarations or expressions
