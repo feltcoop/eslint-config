@@ -17,7 +17,6 @@ module.exports = {
 		// eslint possible problems
 		'array-callback-return': [1, {checkForEach: true}],
 		'for-direction': 1,
-		'getter-return': 1,
 		'no-async-promise-executor': 1,
 		'no-await-in-loop': 1,
 		'no-compare-neg-zero': 1,
@@ -38,14 +37,13 @@ module.exports = {
 		'no-prototype-builtins': 1,
 		'no-self-compare': 1,
 		'no-sparse-arrays': 1,
-		// no-unmodified-loop-condition	disallow unmodified loop conditions
-		// no-unreachable-loop	disallow loops with a body that allows only one iteration
-		// no-unsafe-finally	disallow control flow statements in `finally` blocks
-		// no-unsafe-optional-chaining	disallow use of optional chaining in contexts where the `undefined` value is not allowed
-		// no-unused-private-class-members	disallow unused private class members
-		// no-useless-backreference	disallow useless backreferences in regular expressions
-		// require-atomic-updates	disallow assignments that can lead to race conditions due to usage of `await` or `yield`
-		// use-isnan	require calls to `isNaN()` when checking for `NaN`
+		'no-unmodified-loop-condition': 1,
+		'no-unreachable-loop': 1,
+		'no-unsafe-finally': 1,
+		'no-unsafe-optional-chaining': 1,
+		'no-useless-backreference': 1,
+		'require-atomic-updates': 1, // TODO maybe delete?
+		'use-isnan': 1,
 		//
 		//
 		// eslint suggestions
@@ -132,7 +130,6 @@ module.exports = {
 		// no-sequences	disallow comma operators
 		// no-shadow-restricted-names	disallow identifiers from shadowing restricted names
 		// no-ternary	disallow ternary operators
-		// no-undef-init	disallow initializing variables to `undefined`
 		// no-undefined	disallow the use of `undefined` as an identifier
 		// no-underscore-dangle	disallow dangling underscores in identifiers
 		// no-unneeded-ternary	disallow ternary operators when simpler alternatives exist
