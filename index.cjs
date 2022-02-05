@@ -59,51 +59,33 @@ module.exports = {
 		'no-global-assign': 1,
 		'no-lone-blocks': 1,
 		'no-lonely-if': 1,
-		// no-mixed-operators	disallow mixed binary operators
-		// no-multi-assign	disallow use of chained assignment expressions
-		// no-multi-str	disallow multiline strings
-		// no-negated-condition	disallow negated conditions
-		// no-nested-ternary	disallow nested ternary expressions
-		// no-new	disallow `new` operators outside of assignments or comparisons
-		// no-new-func	disallow `new` operators with the `Function` object
-		// no-new-object	disallow `Object` constructors
-		// no-new-wrappers	disallow `new` operators with the `String`, `Number`, and `Boolean` objects
-		// no-nonoctal-decimal-escape	disallow `\8` and `\9` escape sequences in string literals
-		// no-octal	disallow octal literals
-		// no-octal-escape	disallow octal escape sequences in string literals
-		// no-param-reassign	disallow reassigning `function` parameters
-		// no-plusplus	disallow the unary operators `++` and `--`
-		// no-proto	disallow the use of the `__proto__` property
-		// no-regex-spaces	disallow multiple spaces in regular expressions
-		// no-restricted-exports	disallow specified names in exports
-		// no-restricted-globals	disallow specified global variables
-		// no-restricted-properties	disallow certain properties on certain objects
-		// no-restricted-syntax	disallow specified syntax
-		// no-return-assign	disallow assignment operators in `return` statements
-		// no-script-url	disallow `javascript:` urls
-		// no-sequences	disallow comma operators
-		// no-shadow-restricted-names	disallow identifiers from shadowing restricted names
-		// no-ternary	disallow ternary operators
-		// no-undefined	disallow the use of `undefined` as an identifier
-		// no-underscore-dangle	disallow dangling underscores in identifiers
-		// no-unneeded-ternary	disallow ternary operators when simpler alternatives exist
-		// no-unused-labels	disallow unused labels
-		// no-useless-call	disallow unnecessary calls to `.call()` and `.apply()`
-		// no-useless-catch	disallow unnecessary `catch` clauses
-		// no-useless-computed-key	disallow unnecessary computed property keys in objects and classes
-		// no-useless-concat	disallow unnecessary concatenation of literals or template literals
-		// no-useless-escape	disallow unnecessary escape characters
-		// no-useless-rename	disallow renaming import, export, and destructured assignments to the same name
-		// no-useless-return	disallow redundant return statements
+		'no-multi-assign': [1, {ignoreNonDeclaration: true}],
+		'no-multi-str': 1,
+		'no-new': 1,
+		'no-new-func': 1, // catches cases missed by @typescript-eslint/no-implied-eval
+		'no-new-object': 1,
+		'no-new-wrappers': 1,
+		'no-nonoctal-decimal-escape': 1,
+		'no-octal': 1,
+		'no-octal-escape': 1,
+		'no-param-reassign': 1, // seems better to disallow and ignore when needed; might be annoying
+		'no-proto': 1,
+		'no-regex-spaces': 1,
+		'no-restricted-globals': [1, 'name', 'escape'],
+		'no-script-url': 1,
+		'no-shadow-restricted-names': 1,
+		'no-unneeded-ternary': [1, {defaultAssignment: false}],
+		'no-useless-call': 1,
+		'no-useless-catch': 1,
+		'no-useless-computed-key': [1, {enforceForClassMembers: true}],
+		'no-useless-concat': 1,
+		'no-useless-escape': 1,
+		'no-useless-rename': 1,
 		'no-var': 1, //	require `let` or `const` instead of `var`
-		// no-void	disallow `void` operators
-		// no-warning-comments	disallow specified warning terms in comments
-		// no-with	disallow `with` statements
-		// object-shorthand	require or disallow method and property shorthand syntax for object literals
-		// one-var	enforce variables to be declared either together or separately in functions
-		// one-var-declaration-per-line	require or disallow newlines around variable declarations
-		// operator-assignment	require or disallow assignment operator shorthand where possible
-		// prefer-arrow-callback	require using arrow functions for callbacks
+		'no-warning-comments': [1, {terms: ['todo block']}],
+		'object-shorthand': 1,
+		'operator-assignment': 1,
+		'prefer-arrow-callback': 1,
 		'prefer-const': 1, //	require `const` declarations for variables that are never reassigned after declared
 		// prefer-destructuring	require destructuring from arrays and/or objects
 		// prefer-exponentiation-operator	disallow the use of `Math.pow` in favor of the `**` operator
@@ -172,6 +154,18 @@ module.exports = {
 				'@typescript-eslint/no-non-null-asserted-nullish-coalescing': 1,
 				'@typescript-eslint/no-non-null-asserted-optional-chain': 1,
 				'@typescript-eslint/no-require-imports': 1,
+				'@typescript-eslint/no-restricted-imports': [
+					1,
+					{
+						paths: [
+							{
+								name: 'fs',
+								message: "Please use 'fs-extra' instead, or a local `fs` argument if available.",
+								allowTypeImports: true,
+							},
+						],
+					},
+				],
 				'@typescript-eslint/no-this-alias': 1,
 				'@typescript-eslint/no-throw-literal': 1,
 				'@typescript-eslint/no-unnecessary-boolean-literal-compare': 1,
