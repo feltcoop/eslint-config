@@ -113,6 +113,7 @@ module.exports = {
 				'@typescript-eslint/adjacent-overload-signatures': 1,
 				'@typescript-eslint/array-type': [1, {default: 'array-simple', readonly: 'array-simple'}],
 				'@typescript-eslint/await-thenable': 1,
+				'@typescript-eslint/ban-types': 1,
 				'@typescript-eslint/consistent-type-assertions': 1,
 				'@typescript-eslint/consistent-type-exports': [
 					1,
