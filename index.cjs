@@ -81,35 +81,25 @@ module.exports = {
 		'no-useless-concat': 1,
 		'no-useless-escape': 1,
 		'no-useless-rename': 1,
-		'no-var': 1, //	require `let` or `const` instead of `var`
+		'no-var': 1,
 		'no-warning-comments': [1, {terms: ['todo block']}],
 		'object-shorthand': 1,
 		'operator-assignment': 1,
 		'prefer-arrow-callback': 1,
-		'prefer-const': 1, //	require `const` declarations for variables that are never reassigned after declared
-		// prefer-destructuring	require destructuring from arrays and/or objects
-		// prefer-exponentiation-operator	disallow the use of `Math.pow` in favor of the `**` operator
-		// prefer-named-capture-group	enforce using named capture group in regular expression
-		// prefer-numeric-literals	disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
-		// prefer-object-has-own	disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`
-		// prefer-object-spread	disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead.
-		// prefer-promise-reject-errors	require using Error objects as Promise rejection reasons
-		// prefer-regex-literals	disallow use of the `RegExp` constructor in favor of regular expression literals
-		'prefer-rest-params': 1, //	require rest parameters instead of `arguments`
-		'prefer-spread': 1, //	require spread operators instead of `.apply()`
-		// prefer-template	require template literals instead of string concatenation
-		// quote-props	require quotes around object literal property names
-		// radix	enforce the consistent use of the radix argument when using `parseInt()`
-		// require-unicode-regexp	enforce the use of `u` flag on RegExp
-		// require-yield	require generator functions to contain `yield`
-		// sort-imports	enforce sorted import declarations within modules
-		// sort-keys	require object keys to be sorted
-		// sort-vars	require variables within the same declaration block to be sorted
-		// spaced-comment	enforce consistent spacing after the `//` or `/*` in a comment
-		// strict	require or disallow strict mode directives
-		// symbol-description	require symbol descriptions
-		// vars-on-top	require `var` declarations be placed at the top of their containing scope
-		// yoda	require or disallow "Yoda" conditions
+		'prefer-const': 1,
+		'prefer-destructuring': [1, {AssignmentExpression: {array: false}}],
+		'prefer-exponentiation-operator': 1,
+		'prefer-numeric-literals': 1,
+		'prefer-object-has-own': 1,
+		'prefer-object-spread': 1,
+		'prefer-promise-reject-errors': [1, {allowEmptyReject: true}],
+		'prefer-regex-literals': [1, {disallowRedundantWrapping: true}],
+		'prefer-rest-params': 1,
+		'prefer-spread': 1,
+		radix: 1,
+		'require-unicode-regexp': 1,
+		'require-yield': 1,
+		yoda: 1, // meh
 	},
 	overrides: [
 		{
