@@ -48,50 +48,17 @@ module.exports = {
 		'consistent-this': 1,
 		'default-case-last': 1,
 		eqeqeq: [1, 'always', {null: 'ignore'}],
-		// func-name-matching	require function names to match the name of the variable or property to which they are assigned
-		// func-names	require or disallow named `function` expressions
-		// func-style	enforce the consistent use of either `function` declarations or expressions
-		// grouped-accessor-pairs	require grouped accessor pairs in object literals and classes
-		// guard-for-in	require `for-in` loops to include an `if` statement
-		// id-denylist	disallow specified identifiers
-		// id-length	enforce minimum and maximum identifier lengths
-		// id-match	require identifiers to match a specified regular expression
-		// max-classes-per-file	enforce a maximum number of classes per file
-		// max-depth	enforce a maximum depth that blocks can be nested
-		// max-lines	enforce a maximum number of lines per file
-		// max-lines-per-function	enforce a maximum number of lines of code in a function
-		// max-nested-callbacks	enforce a maximum depth that callbacks can be nested
-		// max-params	enforce a maximum number of parameters in function definitions
-		// max-statements	enforce a maximum number of statements allowed in function blocks
-		// multiline-comment-style	enforce a particular style for multiline comments
-		// new-cap	require constructor names to begin with a capital letter
-		// no-alert	disallow the use of `alert`, `confirm`, and `prompt`
-		// no-bitwise	disallow bitwise operators
-		// no-caller	disallow the use of `arguments.caller` or `arguments.callee`
-		// no-case-declarations	disallow lexical declarations in case clauses
-		// no-confusing-arrow	disallow arrow functions where they could be confused with comparisons
-		// no-console	disallow the use of `console`
-		// no-continue	disallow `continue` statements
-		// no-delete-var	disallow deleting variables
-		// no-div-regex	disallow division operators explicitly at the beginning of regular expressions
-		// no-else-return	disallow `else` blocks after `return` statements in `if` statements
-		// no-empty	disallow empty block statements
-		// no-eq-null	disallow `null` comparisons without type-checking operators
-		// no-eval	disallow the use of `eval()`
-		// no-extend-native	disallow extending native types
-		// no-extra-bind	disallow unnecessary calls to `.bind()`
-		// no-extra-boolean-cast	disallow unnecessary boolean casts
-		// no-extra-label	disallow unnecessary labels
-		// no-floating-decimal	disallow leading or trailing decimal points in numeric literals
-		// no-global-assign	disallow assignments to native objects or read-only global variables
-		// no-implicit-coercion	disallow shorthand type conversions
-		// no-implicit-globals	disallow declarations in the global scope
-		// no-inline-comments	disallow inline comments after code
-		// no-iterator	disallow the use of the `__iterator__` property
-		// no-label-var	disallow labels that share a name with a variable
-		// no-labels	disallow labeled statements
-		// no-lone-blocks	disallow unnecessary nested blocks
-		// no-lonely-if	disallow `if` statements as the only statement in `else` blocks
+		'grouped-accessor-pairs': [1, 'getBeforeSet'],
+		'no-alert': 1, // <3 these but often they're for testing; make explicit w/ eslint-ignore-line
+		'no-case-declarations': 1,
+		'no-else-return': 1,
+		'no-empty': [1, {allowEmptyCatch: true}],
+		'no-eval': 1,
+		'no-extend-native': 1,
+		'no-extra-boolean-cast': 1,
+		'no-global-assign': 1,
+		'no-lone-blocks': 1,
+		'no-lonely-if': 1,
 		// no-mixed-operators	disallow mixed binary operators
 		// no-multi-assign	disallow use of chained assignment expressions
 		// no-multi-str	disallow multiline strings
