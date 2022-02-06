@@ -20,7 +20,7 @@ module.exports = {
 		'no-async-promise-executor': 1,
 		'no-await-in-loop': 1,
 		'no-compare-neg-zero': 1,
-		'no-constant-condition': 1,
+		'no-constant-condition': [1, {checkLoops: false}],
 		'no-constructor-return': 1,
 		'no-control-regex': 1,
 		'no-debugger': 1,
