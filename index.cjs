@@ -15,7 +15,7 @@ module.exports = {
 	},
 	rules: {
 		// eslint possible problems
-		'array-callback-return': [1, {checkForEach: true}],
+		'array-callback-return': 1,
 		'for-direction': 1,
 		'no-async-promise-executor': 1,
 		'no-await-in-loop': 1,
@@ -172,7 +172,6 @@ module.exports = {
 				'@typescript-eslint/prefer-includes': 1,
 				'@typescript-eslint/prefer-namespace-keyword': 1,
 				'@typescript-eslint/prefer-optional-chain': 1,
-				'@typescript-eslint/prefer-reduce-type-parameter': 1,
 				'@typescript-eslint/prefer-regexp-exec': 1,
 				'@typescript-eslint/prefer-string-starts-ends-with': 1,
 				'@typescript-eslint/prefer-ts-expect-error': 1,
