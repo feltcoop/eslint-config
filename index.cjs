@@ -33,7 +33,6 @@ module.exports = {
 		'no-invalid-regexp': 1,
 		'no-irregular-whitespace': 1,
 		'no-misleading-character-class': 1,
-		'no-promise-executor-return': 1,
 		'no-prototype-builtins': 1,
 		'no-self-compare': 1,
 		'no-sparse-arrays': 1,
