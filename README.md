@@ -8,11 +8,9 @@ so all redundant rules are disabled.
 Additionally, to distinguish linting problems from type errors while editing,
 all of the rules are set to warn, not error,
 and users are expected run `eslint --max-warnings 0` to treat them as errors when desired.
-There may be a better way to do this, but it was the first obvious way I found
-to get yellow squigglies in text editors instead of the overloaded red ones,
-and it feels like the computer is being more kind
-when linting problems display as yellow warnings rather than red errors in stdout,
-even if they block CI either way.
+There may be a better way to do this,
+but it works well to get yellow squigglies in text editors
+while reserving red squigglies for type errors.
 
 ## setup
 
