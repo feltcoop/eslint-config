@@ -134,7 +134,7 @@ module.exports = {
 				'@typescript-eslint/no-implied-eval': 1,
 				'@typescript-eslint/no-inferrable-types': 1,
 				'@typescript-eslint/no-invalid-this': [1, {capIsConstructor: false}],
-				'@typescript-eslint/no-invalid-void-type': [1, {allowAsThisParameter: true}],
+				// '@typescript-eslint/no-invalid-void-type': [1, {allowAsThisParameter: true}], // helpful but too many false positives
 				'@typescript-eslint/no-loss-of-precision': 1,
 				'@typescript-eslint/no-meaningless-void-operator': 1,
 				'@typescript-eslint/no-misused-new': 1,
