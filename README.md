@@ -40,6 +40,17 @@ Then add the following to your project's `package.json` or an
 }
 ```
 
+### vscode setup
+
+To make [the VSCode ESLint plugin](https://github.com/microsoft/vscode-eslint) work with Svelte,
+add the following to VSCode's `settings.json`:
+
+```json
+{
+	"eslint.validate": ["javascript", "svelte"]
+}
+```
+
 ## develop
 
 See [index.cjs](index.cjs) and the [ESLint docs](https://eslint.org/).
