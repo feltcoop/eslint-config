@@ -42,7 +42,7 @@ module.exports = {
 		'no-unsafe-finally': 1,
 		'no-unsafe-optional-chaining': 1,
 		'no-useless-backreference': 1,
-		// 'require-atomic-updates': 1, // sometimes excellent but so many false positives: https://github.com/eslint/eslint/issues/11899
+		// 'require-atomic-updates': 1, // sometimes very helpful but so many false positives: https://github.com/eslint/eslint/issues/11899
 		'use-isnan': 1,
 		// eslint suggestions
 		'consistent-this': 1,
