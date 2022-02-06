@@ -9,7 +9,7 @@ Additionally, to distinguish linting problems from type errors while editing,
 all of the rules are set to warn, not error,
 and users are expected run `eslint --max-warnings 0` to treat them as errors when desired.
 There may be a better way to do this,
-but it works well to get yellow squigglies in text editors
+but it works well to get yellow squigglies in text editors for linting problems
 while reserving red squigglies for type errors.
 
 ## setup
