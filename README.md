@@ -23,7 +23,10 @@ Install ESLint dev dependencies with
 and [Svelte](https://github.com/sveltejs/eslint-plugin-svelte3) plugins:
 
 ```bash
-npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-svelte3 @feltcoop/eslint-config
+npm i -D eslint \
+	@typescript-eslint/eslint-plugin @typescript-eslint/parser \
+	eslint-plugin-svelte3 \
+	@feltcoop/eslint-config
 ```
 
 Then add the following to your project's `package.json` or an
