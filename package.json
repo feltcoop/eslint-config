@@ -1,10 +1,13 @@
 {
   "name": "@feltcoop/eslint-config",
-  "description": "an ESLint config for the @feltcoop org",
   "version": "0.0.1",
   "license": "Unlicense",
+  "description": "an ESLint config for the @feltcoop org",
   "homepage": "https://github.com/feltcoop/eslint-config",
-  "repository": "github:feltcoop/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feltcoop/eslint-config.git"
+  },
   "author": {
     "name": "Felt.coop",
     "email": "team@felt.social",
