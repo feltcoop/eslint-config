@@ -2,6 +2,10 @@
 
 > an [ESLint](https://eslint.org/) config for the [@feltcoop](https://github.com/feltcoop) org
 
+```bash
+npm i -D @feltcoop/eslint-config
+```
+
 This ESLint config is designed to complement TypeScript and Prettier,
 so all redundant rules are disabled.
 
