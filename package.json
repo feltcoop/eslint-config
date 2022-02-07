@@ -12,6 +12,13 @@
   },
   "main": "index.cjs",
   "type": "module",
+  "exports": {
+    ".": "./index.cjs"
+  },
+  "files": [
+    "changelog.md",
+    "index.cjs"
+  ],
   "keywords": [
     "eslint",
     "eslintconfig"
