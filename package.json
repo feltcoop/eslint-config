@@ -2,7 +2,7 @@
   "name": "@feltcoop/eslint-config",
   "version": "0.1.1",
   "license": "Unlicense",
-  "description": "an ESLint config for the @feltcoop org",
+  "description": "an ESLint config for TypeScript and Svelte",
   "homepage": "https://github.com/feltcoop/eslint-config",
   "repository": {
     "type": "git",

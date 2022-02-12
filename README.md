@@ -1,6 +1,6 @@
 # @feltcoop/eslint-config
 
-> an [ESLint](https://eslint.org/) config for the [@feltcoop](https://github.com/feltcoop) org
+> an [ESLint](https://eslint.org/) config for TypeScript and Svelte
 
 ```bash
 npm i -D @feltcoop/eslint-config
