@@ -1,6 +1,6 @@
 {
   "name": "@feltcoop/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Unlicense",
   "description": "an ESLint config for the @feltcoop org",
   "homepage": "https://github.com/feltcoop/eslint-config",
