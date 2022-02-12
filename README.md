@@ -66,7 +66,7 @@ First update the [changelog](changelog.md) with a helpful summary of changes, th
 
 ```bash
 npm version patch|minor|major|etc
-npm publish
+npm publish --access=public
 git push
 git push --tags
 ```
