@@ -102,10 +102,6 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ['*.svelte'],
-			processor: 'svelte3/svelte3',
-		},
-		{
 			files: ['*.ts', '*.svelte'],
 			rules: {
 				'@typescript-eslint/adjacent-overload-signatures': 1,
@@ -182,6 +178,11 @@ module.exports = {
 					{path: 'never', types: 'never', lib: 'never'},
 				],
 			},
+		},
+		{
+			files: ['*.svelte'],
+			processor: 'svelte3/svelte3',
+			rules: {'@typescript-eslint/no-unused-expressions': 0},
 		},
 	],
 };
