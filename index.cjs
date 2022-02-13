@@ -58,7 +58,6 @@ module.exports = {
 		'no-global-assign': 1,
 		'no-lone-blocks': 1,
 		'no-lonely-if': 1,
-		'no-multi-assign': [1, {ignoreNonDeclaration: true}],
 		'no-multi-str': 1,
 		'no-new': 1,
 		'no-new-func': 1, // catches cases missed by @typescript-eslint/no-implied-eval

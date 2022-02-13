@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.2
+
+- disable `no-multi-assign`
+  ([#3](https://github.com/feltcoop/eslint-config/pull/3))
+
 ## 0.1.1
 
 - disable `@typescript-eslint/no-unused-expressions` for Svelte
