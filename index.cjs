@@ -9,6 +9,7 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 		extraFileExtensions: ['.svelte'],
+		project: ['./tsconfig.json'],
 	},
 	plugins: ['@typescript-eslint', 'svelte3'],
 	settings: {

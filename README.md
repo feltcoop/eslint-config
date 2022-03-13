@@ -36,10 +36,7 @@ Then add the following to your project's `package.json` or an
 {
 	"eslintConfig": {
 		"root": true,
-		"extends": "@feltcoop",
-		"parserOptions": {
-			"project": ["./tsconfig.json"]
-		}
+		"extends": "@feltcoop"
 	}
 }
 ```
