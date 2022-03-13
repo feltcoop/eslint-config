@@ -38,8 +38,7 @@ Then add the following to your project's `package.json` or an
 		"root": true,
 		"extends": "@feltcoop",
 		"parserOptions": {
-			"project": ["./tsconfig.json"],
-			"extraFileExtensions": [".svelte"]
+			"project": ["./tsconfig.json"]
 		}
 	}
 }
