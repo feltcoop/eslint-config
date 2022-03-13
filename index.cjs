@@ -8,6 +8,8 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
+		project: ['./tsconfig.json'],
+		extraFileExtensions: ['.svelte'],
 	},
 	plugins: ['@typescript-eslint', 'svelte3'],
 	settings: {
