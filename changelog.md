@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.3
+
+- add default `parserOptions.extraFileExtensions` for Svelte so user configs don't need it
+  ([#4](https://github.com/feltcoop/eslint-config/pull/4))
+
 ## 0.1.2
 
 - disable `no-multi-assign`
