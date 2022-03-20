@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.4
+
+- enable `reportUnusedDisableDirectives`
+  ([#5](https://github.com/feltcoop/eslint-config/pull/5))
+
 ## 0.1.3
 
 - add default `parserOptions.extraFileExtensions` and `parserOptions.project`
