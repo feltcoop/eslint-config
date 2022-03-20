@@ -15,6 +15,7 @@ module.exports = {
 	settings: {
 		'svelte3/typescript': true,
 	},
+	reportUnusedDisableDirectives: true,
 	rules: {
 		// eslint possible problems
 		'array-callback-return': 1,
