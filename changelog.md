@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.5
+
+- disable `no-lonely-if`
+  ([#6](https://github.com/feltcoop/eslint-config/pull/6))
+
 ## 0.1.4
 
 - enable `reportUnusedDisableDirectives`

@@ -60,7 +60,6 @@ module.exports = {
 		'no-extra-boolean-cast': 1,
 		'no-global-assign': 1,
 		'no-lone-blocks': 1,
-		'no-lonely-if': 1,
 		'no-multi-str': 1,
 		'no-new': 1,
 		'no-new-func': 1, // catches cases missed by @typescript-eslint/no-implied-eval
