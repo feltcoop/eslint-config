@@ -54,6 +54,9 @@ add the following to VSCode's `settings.json`:
 }
 ```
 
+See also
+[the `eslint-plugin-svelte3` integration docs](https://github.com/sveltejs/eslint-plugin-svelte3/blob/master/INTEGRATIONS.md).
+
 ## develop
 
 See [index.cjs](index.cjs) and the [ESLint docs](https://eslint.org/).
