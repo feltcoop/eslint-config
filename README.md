@@ -16,6 +16,8 @@ There may be a better way to do this,
 but it works well to get yellow squigglies in text editors for linting problems
 while reserving red squigglies for type errors.
 
+Got questions or proposed changes? Open issues!
+
 ## setup
 
 Install ESLint dev dependencies with
