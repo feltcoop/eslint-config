@@ -49,8 +49,9 @@ Then add the following to your project's `package.json` or an
 To make [the VSCode ESLint plugin](https://github.com/microsoft/vscode-eslint) work with Svelte,
 add the following to VSCode's `settings.json`:
 
-```json
+```json5
 {
+	// Preferences: Open Settings (JSON)
 	"eslint.validate": ["svelte", "javascript", "javascriptreact"]
 }
 ```
