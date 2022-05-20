@@ -34,8 +34,9 @@ npm i -D eslint \
 Then add the following to your project's `package.json` or an
 [ESLint config file](https://eslint.org/docs/user-guide/configuring/configuration-files):
 
-```json
+```json5
 {
+	// ...package.json stuff
 	"eslintConfig": {
 		"root": true,
 		"extends": "@feltcoop"
