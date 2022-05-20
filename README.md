@@ -51,7 +51,7 @@ add the following to VSCode's `settings.json`:
 
 ```json5
 {
-	// Preferences: Open Settings (JSON)
+	// ctrl+shift+P then `> Preferences: Open Settings (JSON)`
 	"eslint.validate": ["svelte", "javascript", "javascriptreact"]
 }
 ```
