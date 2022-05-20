@@ -9,12 +9,12 @@ npm i -D @feltcoop/eslint-config
 This ESLint config is designed to complement TypeScript and Prettier,
 so all redundant rules are disabled.
 
-Additionally, to distinguish linting problems from type errors while editing,
+To distinguish linting problems from type errors while editing,
 all of the rules are set to warn, not error,
 and users are expected run `eslint --max-warnings 0` to treat them as errors when desired.
 There may be a better way to do this,
 but it works well to get yellow squigglies in text editors for linting problems
-while reserving red squigglies for type errors.
+while reserving red for type errors.
 
 Got questions or proposed changes? Open issues!
 
@@ -51,7 +51,7 @@ add the following to VSCode's `settings.json`:
 
 ```json
 {
-	"eslint.validate": ["javascript", "svelte"]
+	"eslint.validate": ["svelte", "javascript", "javascriptreact"]
 }
 ```
 
@@ -63,9 +63,9 @@ See also
 Every ESLint config has opinions.
 This project is somewhat strict, because it's easier to disable rules
 than it is to enable ones that are invisibly disabled,
-but we don't want it to be overly opinionated.
-We're happy to discuss changes in the issues,
-and if you'd like to change any rules, use
+but we don't want it to be *too* opinionated.
+We're happy to discuss proposed changes in the issues,
+and to override any defaults, use
 [the `rules` property](https://eslint.org/docs/user-guide/configuring/configuration-files)
 in your config:
 
