@@ -43,6 +43,30 @@ Then add the following to your project's `package.json` or an
 }
 ```
 
+## overrides
+
+Every ESLint config has opinions.
+This project is somewhat strict, because it's easier to disable rules
+than it is to enable ones that are invisibly disabled,
+but we don't want it to be overly opinionated.
+We're happy to discuss changes in the issues,
+and if you'd like to change any rules, use
+[the `rules` property](https://eslint.org/docs/user-guide/configuring/configuration-files)
+in your config:
+
+```json5
+{
+	"eslintConfig": {
+		"root": true,
+		"extends": "@feltcoop",
+		"rules": {
+			"no-param-reassign": 0, // disable an enabled rule
+			"no-console": 1, // enable a disabled rule
+		}
+	}
+}
+```
+
 ### vscode setup
 
 To make [the VSCode ESLint plugin](https://github.com/microsoft/vscode-eslint) work with Svelte,
