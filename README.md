@@ -44,6 +44,20 @@ Then add the following to your project's `package.json` or an
 }
 ```
 
+### vscode setup
+
+To make [the VSCode ESLint plugin](https://github.com/microsoft/vscode-eslint) work with Svelte,
+add the following to VSCode's `settings.json`:
+
+```json
+{
+	"eslint.validate": ["javascript", "svelte"]
+}
+```
+
+See also
+[the `eslint-plugin-svelte3` integration docs](https://github.com/sveltejs/eslint-plugin-svelte3/blob/master/INTEGRATIONS.md).
+
 ## overrides
 
 Every ESLint config has opinions.
@@ -67,20 +81,6 @@ in your config:
 	}
 }
 ```
-
-### vscode setup
-
-To make [the VSCode ESLint plugin](https://github.com/microsoft/vscode-eslint) work with Svelte,
-add the following to VSCode's `settings.json`:
-
-```json
-{
-	"eslint.validate": ["javascript", "svelte"]
-}
-```
-
-See also
-[the `eslint-plugin-svelte3` integration docs](https://github.com/sveltejs/eslint-plugin-svelte3/blob/master/INTEGRATIONS.md).
 
 ## develop
 
