@@ -8,6 +8,7 @@ npm i -D @feltcoop/eslint-config
 
 This ESLint config is designed to complement TypeScript and Prettier,
 so all redundant rules are disabled.
+It extends no other configs, so wysiwyg👀
 
 To distinguish linting problems from type errors while editing,
 all of the rules are set to warn, not error,
