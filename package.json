@@ -1,6 +1,6 @@
 {
   "name": "@feltcoop/eslint-config",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "Unlicense",
   "description": "an ESLint config for TypeScript, Svelte, and Prettier",
   "homepage": "https://github.com/feltcoop/eslint-config",
