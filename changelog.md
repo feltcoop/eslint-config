@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.6
+
+- disable `@typescript-eslint/no-restricted-imports`
+  ([#8](https://github.com/feltcoop/eslint-config/pull/8))
+
 ## 0.1.5
 
 - disable `no-lonely-if`
