@@ -140,18 +140,6 @@ module.exports = {
 				'@typescript-eslint/no-non-null-asserted-nullish-coalescing': 1,
 				'@typescript-eslint/no-non-null-asserted-optional-chain': 1,
 				'@typescript-eslint/no-require-imports': 1,
-				'@typescript-eslint/no-restricted-imports': [
-					1,
-					{
-						paths: [
-							{
-								name: 'fs',
-								message: "Please use 'fs-extra' instead, or a local `fs` argument if available.",
-								allowTypeImports: true,
-							},
-						],
-					},
-				],
 				'@typescript-eslint/no-this-alias': 1,
 				'@typescript-eslint/no-throw-literal': 1,
 				'@typescript-eslint/no-unnecessary-boolean-literal-compare': 1,
