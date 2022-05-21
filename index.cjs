@@ -9,7 +9,7 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 		project: ['./tsconfig.json'],
-		extraFileExtensions: ['.svelte'],
+		extraFileExtensions: ['.svelte', '.svx'],
 	},
 	plugins: ['@typescript-eslint', 'svelte3'],
 	settings: {
@@ -103,7 +103,7 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ['*.ts', '*.svelte'],
+			files: ['*.ts', '*.svelte', '*.svx'],
 			rules: {
 				'@typescript-eslint/adjacent-overload-signatures': 1,
 				'@typescript-eslint/array-type': [1, {default: 'array-simple', readonly: 'array-simple'}],
@@ -181,7 +181,7 @@ module.exports = {
 			},
 		},
 		{
-			files: ['*.svelte'],
+			files: ['*.svelte', '*.svx'],
 			processor: 'svelte3/svelte3',
 			rules: {
 				'@typescript-eslint/no-unused-expressions': 0, // allow Svelte idioms like `$: someVar, doSomething()`
