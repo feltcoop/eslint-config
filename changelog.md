@@ -4,6 +4,8 @@
 
 - add `.svx` support
   ([#7](https://github.com/feltcoop/eslint-config/pull/7))
+- disable `@typescript-eslint/no-restricted-imports`
+  ([#8](https://github.com/feltcoop/eslint-config/pull/8))
 
 ## 0.1.5
 
