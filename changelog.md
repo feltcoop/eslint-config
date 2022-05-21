@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.6
+
+- add `.svx` support
+  ([#7](https://github.com/feltcoop/eslint-config/pull/7))
+
 ## 0.1.5
 
 - disable `no-lonely-if`
