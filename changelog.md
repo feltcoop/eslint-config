@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.7
+
+- disable `no-else-return`
+  ([#9](https://github.com/feltcoop/eslint-config/pull/9))
+
 ## 0.1.6
 
 - disable `@typescript-eslint/no-restricted-imports`

@@ -53,7 +53,7 @@ module.exports = {
 		'grouped-accessor-pairs': [1, 'getBeforeSet'],
 		'no-alert': 1, // <3 these but often they're for testing; make explicit w/ eslint-ignore-line
 		'no-case-declarations': 1,
-		'no-else-return': 1,
+		// 'no-else-return': 1, // a bit too opinionated
 		'no-empty': [1, {allowEmptyCatch: true}],
 		'no-eval': 1,
 		'no-extend-native': 1,
