@@ -159,6 +159,7 @@ module.exports = {
 				'@typescript-eslint/prefer-regexp-exec': 1,
 				'@typescript-eslint/prefer-string-starts-ends-with': 1,
 				'@typescript-eslint/prefer-ts-expect-error': 1,
+				'@typescript-eslint/no-redundant-type-constituents': 1,
 				'@typescript-eslint/require-array-sort-compare': [1, {ignoreStringArrays: true}],
 				'@typescript-eslint/return-await': 1,
 				'@typescript-eslint/switch-exhaustiveness-check': 1,
