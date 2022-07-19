@@ -89,6 +89,8 @@ in your config:
 
 See [index.cjs](index.cjs) and the [ESLint docs](https://eslint.org/).
 
+Rules are current through `eslint@8.20.0` and `@typescript-eslint/eslint-plugin@5.30.7`.
+
 ## publish
 
 First update the [changelog](changelog.md) with a helpful summary of changes, then:

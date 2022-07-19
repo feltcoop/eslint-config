@@ -53,6 +53,7 @@ module.exports = {
 		'grouped-accessor-pairs': [1, 'getBeforeSet'],
 		'no-alert': 1, // <3 these but often they're for testing; make explicit w/ eslint-ignore-line
 		'no-case-declarations': 1,
+		'no-constant-binary-expression': 1,
 		// 'no-else-return': 1, // a bit too opinionated
 		'no-empty': [1, {allowEmptyCatch: true}],
 		'no-eval': 1,
@@ -122,10 +123,11 @@ module.exports = {
 				'@typescript-eslint/method-signature-style': 1,
 				'@typescript-eslint/no-array-constructor': 1,
 				'@typescript-eslint/no-base-to-string': 1,
-				'@typescript-eslint/no-duplicate-imports': 1,
-				'@typescript-eslint/no-empty-function': 1,
+				'@typescript-eslint/no-duplicate-imports': 1, // TODO deprecated for https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-duplicates.md
+				'@typescript-eslint/no-empty-function': [1, {allow: ['overrideMethods']}],
 				'@typescript-eslint/no-empty-interface': 1,
 				'@typescript-eslint/no-extra-non-null-assertion': 1,
+				'@typescript-eslint/no-duplicate-enum-values': 1,
 				'@typescript-eslint/no-floating-promises': [1, {ignoreIIFE: true}],
 				'@typescript-eslint/no-for-in-array': 1,
 				'@typescript-eslint/no-implied-eval': 1,
@@ -143,7 +145,8 @@ module.exports = {
 				'@typescript-eslint/no-this-alias': 1,
 				'@typescript-eslint/no-throw-literal': 1,
 				'@typescript-eslint/no-unnecessary-boolean-literal-compare': 1,
-				'@typescript-eslint/no-unnecessary-type-assertion': 1,
+				// TODO is erroring with eslint@8.20.0 and @typescript-eslint/eslint-plugin@5.30.7 -- Cannot read properties of undefined (reading 'kind')
+				// '@typescript-eslint/no-unnecessary-type-assertion': 1,
 				'@typescript-eslint/no-unnecessary-type-constraint': 1,
 				'@typescript-eslint/no-unused-expressions': [
 					1,
@@ -159,6 +162,7 @@ module.exports = {
 				'@typescript-eslint/prefer-regexp-exec': 1,
 				'@typescript-eslint/prefer-string-starts-ends-with': 1,
 				'@typescript-eslint/prefer-ts-expect-error': 1,
+				'@typescript-eslint/no-redundant-type-constituents': 1,
 				'@typescript-eslint/require-array-sort-compare': [1, {ignoreStringArrays: true}],
 				'@typescript-eslint/return-await': 1,
 				'@typescript-eslint/switch-exhaustiveness-check': 1,
