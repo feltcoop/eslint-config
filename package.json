@@ -37,7 +37,7 @@
     "deploy": "gro deploy"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.7.1"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5",

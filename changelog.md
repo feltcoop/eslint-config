@@ -1,5 +1,10 @@
 # changelog
 
+## 0.1.8
+
+- upgrade to `eslint@8.20.0` and `@typescript-eslint/eslint-plugin@5.30.7`
+  ([#10](https://github.com/feltcoop/eslint-config/pull/10))
+
 ## 0.1.7
 
 - disable `no-else-return`
