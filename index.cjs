@@ -126,6 +126,7 @@ module.exports = {
 				'@typescript-eslint/no-empty-function': 1,
 				'@typescript-eslint/no-empty-interface': 1,
 				'@typescript-eslint/no-extra-non-null-assertion': 1,
+				'@typescript-eslint/no-duplicate-enum-values': 1,
 				'@typescript-eslint/no-floating-promises': [1, {ignoreIIFE: true}],
 				'@typescript-eslint/no-for-in-array': 1,
 				'@typescript-eslint/no-implied-eval': 1,
@@ -143,7 +144,8 @@ module.exports = {
 				'@typescript-eslint/no-this-alias': 1,
 				'@typescript-eslint/no-throw-literal': 1,
 				'@typescript-eslint/no-unnecessary-boolean-literal-compare': 1,
-				'@typescript-eslint/no-unnecessary-type-assertion': 1,
+				// TODO is erroring with eslint@8.20.0 and @typescript-eslint/eslint-plugin@5.30.7 -- Cannot read properties of undefined (reading 'kind')
+				// '@typescript-eslint/no-unnecessary-type-assertion': 1,
 				'@typescript-eslint/no-unnecessary-type-constraint': 1,
 				'@typescript-eslint/no-unused-expressions': [
 					1,
