@@ -1,5 +1,10 @@
 # changelog
 
+## 0.2.1
+
+- disable the `overrideMethods` option for `@typescript-eslint/no-empty-function` temporarily
+  ([#11](https://github.com/feltcoop/eslint-config/pull/11))
+
 ## 0.2.0
 
 - **break**: upgrade rules to `eslint@8.20.0` and `@typescript-eslint/eslint-plugin@5.30.7`

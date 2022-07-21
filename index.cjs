@@ -124,7 +124,7 @@ module.exports = {
 				'@typescript-eslint/no-array-constructor': 1,
 				'@typescript-eslint/no-base-to-string': 1,
 				'@typescript-eslint/no-duplicate-imports': 1, // TODO deprecated for https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/no-duplicates.md
-				'@typescript-eslint/no-empty-function': [1, {allow: ['overrideMethods']}],
+				'@typescript-eslint/no-empty-function': 1, // TODO eslint is currently throwing an error with this: `{allow: ['overrideMethods']}`
 				'@typescript-eslint/no-empty-interface': 1,
 				'@typescript-eslint/no-extra-non-null-assertion': 1,
 				'@typescript-eslint/no-duplicate-enum-values': 1,
